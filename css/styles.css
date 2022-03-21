@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url(/Exterior/pag/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+header{
+    background-color: #9564ED;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.logo{
+    display: block;
+    height: 60px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+[class^=menu]{
+    text-decoration: none;
+    color: #260D62;
+    background-color: #7463E0;
+}
+
+[class^=menu]:hover{
+    background-color: #5946D7;
+    color: #63C6EE;
+}
+
+.menu-autor{
+    width: 90px;
+    position: absolute;
+    padding: 21px 28px;
+    top: 0; right: 0%;
+}
+
+.menu-referencias{
+    width: 130px;
+    position: absolute;
+    padding: 21px 28px;
+    top: 0; right: 100px;
+}
+
+.menu-dibujos{
+    width: 110px;
+    position: absolute;
+    padding: 21px 30px;
+    top: 0; right: 240px;
+}
+
+.menu-inicio{
+    width: 100px;
+    position: absolute;
+    padding: 21px 32px;
+    top: 0; right: 360px;
+}
+
+main{
+    height:auto;
+}
+
+.container{
+    background-color: #9564edc2;
+    margin-top: 90px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 80px;
+    border-radius: 40px;
+}
+/* comienzo de contenido - inicio*/
+
+[class^=img]{
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #260D62;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+/* fin de contenido - inicio*/
+
+/* comienzo de contenido - dibujos*/
+.CajaDeDibujos{
+    height: 310px;
+    background-color: #260d6293;
+    border-radius: 30px;
+    margin-top: 5px;
+    overflow: auto;
+}
+
+.CajaDeDibujos::-webkit-scrollbar{
+    width: 12px;
+    background-color: #5946D7;
+}
+
+.CajaDeDibujos::-webkit-scrollbar-thumb{
+    background-color: #260D62;
+    border-radius: 5px;
+}
+
+.CajaDeDibujos::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+[class^=cajitas]{
+    width: 374px;
+    height: 260px;
+    border-radius: 10px;
+    background-color: #caa2f0ff;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    box-shadow: -1px 10px 30px -10px #a792f3;
+    overflow-y: auto;
+}
+
+[class^=cajitas]::-webkit-scrollbar{
+    width: 12px;
+    background-color: #5946D7;
+}
+
+[class^=cajitas]::-webkit-scrollbar-thumb{
+    background-color: #260D62;
+    border-radius: 5px;
+}
+
+[class^=cajitas]::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+[class^=dibujo]{
+    width: 330px;
+    display: inline-block;/*
+    margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 0; */
+    border-radius: 4px;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #6e53ccde;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    /* width: 340px; */
+    /* border-radius: 4px;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #6e53ccde; */
+    background-color: lawngreen;
+}
+
+figcaption{
+    color: #260D62;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(240, 128, 128, 0.472);
+    width: 100%;
+    padding: 5%;
+}
+
+figure:hover figcaption{
+    display: block;
+}
+
+/* .dibujo-2, .dibujo-3, .dibujo-4, .dibujo-5, .dibujo-6{
+    filter: blur(10px);
+} */
+/* fin de contenido - dibujos*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #9564ED;
+    color: #260D62;
+    height: 50px;
+}
+
+.parrafo-footer{
+    padding-left: 20px;
+}
